@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './Primary.css'
-import TodoList from './TodoList';
+//import TodoList from './TodoList';
 //import { Switch } from 'react-router';
 
 import { Link } from 'react-router-dom';
