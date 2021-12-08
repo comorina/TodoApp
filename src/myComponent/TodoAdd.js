@@ -16,9 +16,10 @@ export default function TodoAdd(){
             </header>
             <p className='para'>Here you can add Todo.</p>
             <input type='text' className='inpt' placeholder='Title.. .' autoFocus required/><br/>
+            <div>
             <Link to='/TodoList'>
-            <button type="button" onclick={myfunction}>Add</button>
-            </Link>
+            <button type="button" onclick={myfunction} className="addbtn">Add</button>
+            </Link></div>
         </div>
     )
 }

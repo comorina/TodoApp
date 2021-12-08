@@ -16,21 +16,22 @@ export default function TodoList(){
             <p className='para1'>All Todo List.</p>
             <hr/>
             <div>
-                <input type='text' id ='editcontent'/><button type='button'>Edit</button>
+                <input type='text' id ='editcontent'/>
+                <button type='button' className="editbtn">Edit</button>
             </div><br/><br/>
 
-            <p style={{fontSize:'20px', fontWeight:'bold', marginLeft:'50px'}}>Apple
-                <div>
-                    <Link to={'/TodoAdd'}>
-                        <input type='image' src={edit} style={{float:'right', marginLeft:'50px', width:'20px', height:'20px',boxShadow:'0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19)'}}/>
-                    </Link>
-                </div>
-                <div>
-                    <Link to ='/TodoAdd'>
-                        <input type='image' src={bin} style={{float:'right', left:'50px', width:'20px', height:'20px', boxShadow:'0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19)'}}/>
-                    </Link>
-                </div>
-            </p>
+            <table>
+                <tr>
+                    <td><h3 className="Listname">Apple</h3></td>
+                    <td>
+                        
+                            <button className="btn"> <img src={bin} className="btnsize"/> </button>
+                            < button className="btn1"> <img src={edit} className="btnsize"/> </button>
+                        
+                    </td>
+                </tr>
+            </table>
+            
         </div>
     );
 }
